@@ -1,0 +1,53 @@
+#TB_overlay {
+	background: #000;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100050; /* Above DFW. */
+}
+
+#TB_window {
+	position: fixed;
+	background-color: #fff;
+	z-index: 100050; /* Above DFW. */
+	visibility: hidden;
+	text-align: left;
+	top: 50%;
+	left: 50%;
+	-webkit-box-shadow: 0 3px 6px rgba( 0, 0, 0, 0.3 );
+	box-shadow: 0 3px 6px rgba( 0, 0, 0, 0.3 );
+}
+
+#TB_window img#TB_Image {
+	display: block;
+	margin: 15px 0 0 15px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+}
+
+#TB_caption{
+	height: 25px;
+	padding: 7px 30px 10px 25px;
+	float: left;
+}
+
+#TB_closeWindow {
+	height: 25px;
+	padding: 11px 25px 10px 0;
+	float: right;
+}
+
+#TB_closeWindowButton {
+	position: absolute;
+	left: auto;
+	right: 0;
+	width: 29px;
+	height: 29px;
+	border: 0;
+	pa
